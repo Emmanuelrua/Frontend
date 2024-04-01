@@ -1,1 +1,37 @@
 /* You can add global styles to this file, and also import other style files */
+
+@use 'anidacion';
+
+//Variables
+$color-principal: black;
+
+
+//Mixins
+
+@mixin caja_persanolizada ($fondo:white) {
+    background-color: brown;
+}
+
+
+.caja {
+    @include caja_persanolizada(); 
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+ }
+ 
+ body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(
+        to bottom right,
+        #403F44, #1E1B32
+    );
+ }
